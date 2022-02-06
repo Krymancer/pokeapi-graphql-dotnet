@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+    sqlserver:
+        image: "mcr.microsoft.com/mssql/server"
+        environment:
+            MSSQL_SA_PASSWORD: "QN1nRz6oprJ8V9xL"
+            ACCEPT_EULA: "Y"
+            MSSQL_PID: "Developer"
+        ports: 
+          - "1433:1433"
+
